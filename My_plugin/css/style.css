@@ -1,6 +1,7 @@
-/*.naph_marker{ 
-	display:none; 
-} */
+
+.tr_head{
+	background-color: #bde9ba;
+}
 
 .naph_marker{ 
 	color: white; 
