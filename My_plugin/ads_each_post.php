@@ -93,7 +93,7 @@
 			echo $key;
 			echo	'</strong>
 					<div class="row-actions visible"><span class="activate">
-						<a href="" id="edit" class="edit" >Edit</a> | </span><span class="delete">
+						
 						<a href="delete_ad.php?delete_ad='.$key.'" id="delete" class="delete" >Usuń</a></span></div>
 
 					</td>
@@ -107,9 +107,11 @@
 					</tr>
 				</tfoot>
 
-			</table>';
+			</table>
+';
 	
 	}
+
 
 	add_filter("the_content", "add_content_before",1); 
 	function add_content_before($content){
