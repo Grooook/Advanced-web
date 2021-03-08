@@ -119,6 +119,10 @@
 			
 			$random_ad = array_rand($announcement_array,1);
 
+			//add action hook
+			do_action('setting_announcement', $random_ad);
+			
+
 			$custom_content = '<div class="entry-content">
 								    <p>';
 			$custom_content .= $announcement_array[$random_ad];
@@ -127,6 +131,7 @@
 								 
 			$custom_content .= $content;
 
+			
 
 			return $custom_content; 
 		}
